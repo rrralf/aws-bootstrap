@@ -85,7 +85,8 @@ Resources:
       ResourceSignal:
         # This tells CloudFormation to wait for a signal before marking the new
         # instance as created (we’ll see how in the install script).
-        Timeout: PT15M
+        # Timeout: PT15M
+        Timeout: PT3M
         Count: 1
     # Metadata:
     #   AWS::CloudFormation::Init:
