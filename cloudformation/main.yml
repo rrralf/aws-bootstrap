@@ -48,6 +48,11 @@ Resources:
         - Key: Name
           Value: !Ref AWS::StackName
 
+  # The next resource we’ll create is an IAM role, which our EC2 
+  # instance will use to define its permissions. At this
+  # point our application doesn’t need much, as it isn’t using
+  # any AWS services yet. For now, we will grant our instance
+  # role full access to AWS CloudWatch
   EC2InstanceRole:  
     Type: "AWS::IAM::Role"
     Properties:
@@ -65,7 +70,47 @@ Resources:
         - Key: Name
           Value: !Ref AWS::StackName
 
+  # Next, we’ll create an instance profile to tie our IAM role to
+  # the EC2 instance that we’ll create
+  EC2InstanceProfile:
+    Type: "AWS::IAM::InstanceProfile"
+    Properties:
+      Roles:
+        - Ref: EC2InstanceRole
 
-# Outputs:
+  # Now it’s time to create our final resource, the EC2 instance itself
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    CreationPolicy:
+      ResourceSignal:
+        # This tells CloudFormation to wait for a signal before marking the new
+        # instance as created (we’ll see how in the install script).
+        Timeout: PT15M
+        Count: 1
+    # Metadata:
+    #   AWS::CloudFormation::Init:
+    #     config:
+    #       packages:
+    #         yum:
+    #           wget: []
+    #           unzip: []
+    Properties:
+      ImageId: !Ref EC2AMI
+      InstanceType: !Ref EC2InstanceType
+      IamInstanceProfile: !Ref EC2InstanceProfile
+      Monitoring: true
+      SubnetId: !Ref StackSubnet
+      SecurityGroupIds:
+        - !Ref SecurityGroup
+      # UserData:
+      #   # ... 
+      Tags:
+        - Key: Name
+          Value: !Ref AWS::StackName
 
-
+Outputs:
+  InstanceEndpoint:
+    Description: The DNS name for the created instance
+    Value: !Sub "http://${EC2Instance.PublicDnsName}:8080"
+    Export:
+      Name: InstanceEndpoint
