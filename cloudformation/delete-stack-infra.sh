@@ -5,7 +5,7 @@ CLI_PROFILE=awsbootstrap
 EC2_INSTANCE_TYPE=t2.micro
 
 # Deploy the CloudFormation template
-echo -e "\n\n=========== Deploying main.yml ==========="
+echo -e "\n\n=========== Delete stack $STACK_NAME ==========="
 aws cloudformation delete-stack \
     --region $REGION \
     --profile $CLI_PROFILE \
