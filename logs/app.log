@@ -1,0 +1,225 @@
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\Repo\AWS Labs\aws-bootstrap\node_modules\pm2\lib\ProcessContainerFork.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+Server running at http://n-kv-center-532:8080/
