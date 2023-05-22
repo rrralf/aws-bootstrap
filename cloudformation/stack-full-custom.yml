@@ -95,7 +95,7 @@ Resources:
   # point our application doesn’t need much, as it isn’t using
   # any AWS services yet. For now, we will grant our instance
   # role full access to AWS CloudWatch
-  EC2InstanceRole:  
+  WebServiceInstanceRole:  
     Type: "AWS::IAM::Role"
     Properties:
       AssumeRolePolicyDocument:
@@ -114,14 +114,14 @@ Resources:
 
   # Next, we’ll create an instance profile to tie our IAM role to
   # the EC2 instance that we’ll create
-  EC2InstanceProfile:
+  WebServiceInstanceProfile:
     Type: "AWS::IAM::InstanceProfile"
     Properties:
       Roles:
-        - Ref: EC2InstanceRole
+        - Ref: WebServiceInstanceRole
 
   # Now it’s time to create our final resource, the EC2 instance itself
-  Instance:
+  WebServiceInstance:
     Type: AWS::EC2::Instance
     CreationPolicy:
       ResourceSignal:
@@ -140,7 +140,7 @@ Resources:
     Properties:
       ImageId: !Ref EC2AMI
       InstanceType: !Ref EC2InstanceType
-      IamInstanceProfile: !Ref EC2InstanceProfile
+      IamInstanceProfile: !Ref WebServiceInstanceProfile
       Monitoring: true
       SubnetId: !Ref PublicSubnetA
       SecurityGroupIds:
@@ -155,14 +155,13 @@ Resources:
           # Update all packages
           yum -y update
 
-          # Get latest cfn scripts;
-          https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/bestpractices.html#cfninit
-
+          # Get latest cfn scripts; https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html#cfninit
           yum install -y aws-cfn-bootstrap
+
           yum install -y git
 
           # Have CloudFormation install any files and packages from the metadata
-          /opt/aws/bin/cfn-init -v --stack ${AWS::StackName} --region ${AWS::Region} --resource EC2Instance
+          /opt/aws/bin/cfn-init -v --stack ${AWS::StackName} --region ${AWS::Region} --resource WebServiceInstance
 
           cat > /tmp/install_script.sh << EOF
             # START
@@ -191,13 +190,11 @@ Resources:
             npm start
           EOF
 
-          chown ec2-user:ec2-user /tmp/install_script.sh && chmod a+x
-          /tmp/install_script.sh
-
+          chown ec2-user:ec2-user /tmp/install_script.sh && chmod a+x /tmp/install_script.sh
           sleep 1; su - ec2-user -c "/tmp/install_script.sh"
 
           # Signal to CloudFormation that the instance is ready
-          /opt/aws/bin/cfn-signal -e $? --stack ${AWS::StackName} --region ${AWS::Region} --resource EC2Instance
+          /opt/aws/bin/cfn-signal -e $? --stack ${AWS::StackName} --region ${AWS::Region} --resource WebServiceInstance
       Tags:
         - Key: Name
           Value: !Ref AWS::StackName
@@ -205,6 +202,6 @@ Resources:
 Outputs:
   InstanceEndpoint:
     Description: The DNS name for the created instance
-    Value: !Sub "http://${Instance.PublicDnsName}:8080"
+    Value: !Sub "http://${WebServiceInstance.PublicDnsName}:8080"
     Export:
       Name: InstanceEndpoint
