@@ -3,7 +3,7 @@ STACK_NAME=awsbootstrap-dev
 REGION=eu-central-1
 CLI_PROFILE=awsbootstrap
 EC2_INSTANCE_TYPE=t2.micro
-CF_SCRIPT=stack-full.yml
+CF_SCRIPT=stack-full-custom.yml
 
 # Deploy the CloudFormation template
 echo -e "\n\n=========== Deploying stack $STACK_NAME using $CF_SCRIPT ==========="

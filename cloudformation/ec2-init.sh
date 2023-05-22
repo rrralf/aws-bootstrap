@@ -37,7 +37,7 @@ mv aws-bootstrap-main app
 # Create log directory
 mkdir -p /home/ec2-user/app/logs
 # Run server
-cd app
+cd app/src
 npm install
 npm start
 EOF
